@@ -1,0 +1,19 @@
+@startuml
+/'casos de uso do sistema de requisitos '/
+left to right direction
+actor "Gerente de compras" as GC
+actor "Supervisor de estoque" as SE
+actor "Coordenador de produção" as CP
+
+usecase "Comprar materiais" as UC1
+usecase "Gerenciar materiais" as UC2
+USECASE " Garentir produção" as Uc3
+
+
+GC -- UC1
+SE -- UC2
+GC -->SE
+CP -- Uc3
+
+  
+@enduml
