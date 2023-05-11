@@ -1,0 +1,30 @@
+@startuml
+/'casos de uso do sistema de requisitos '/
+left to right direction
+actor "Gerente de compras" as GC
+actor "Supervisor de estoque" as SE
+actor "Coordenador de produção" as CP
+actor "Analista de produção"  as  AP
+actor "Gerente da produção" as GP
+actor "Resposavél de vendas" as   RV
+
+rectangle "Sistema da Delícias Gourmet:"{
+usecase "Comprar materiais" as UC1
+usecase "Gerenciar materiais" as UC2
+USECASE " Garentir produção" as Uc3
+USECASE "Grantir produção"  as Uc4
+USECASE "Coordenar entrega " as Uc5
+USECASE "Gerenciar Produção" as Uc6
+} 
+
+GC -- UC1
+SE -- UC2
+GC -->SE
+CP -- Uc3
+AP -- Uc4
+GP -- Uc5
+RV -- Uc6
+
+
+  
+@enduml
